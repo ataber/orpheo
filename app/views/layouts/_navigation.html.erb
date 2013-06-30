@@ -1,8 +1,8 @@
-<%= link_to "Rails Stripe Membership Saas", root_path, :class => 'brand' %>
+<%= link_to "Orpheo", root_path, :class => 'brand' %>
 <ul class="nav">
   <% if user_signed_in? %>
     <li>
-    <%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %>        
+    <%= link_to 'Logout', destroy_user_session_path, :method=>'delete', :class => "pull-right" %>        
     </li>
   <% else %>
     <li>
@@ -12,6 +12,9 @@
   <% if user_signed_in? %>
     <li>
     <%= link_to 'Edit account', edit_user_registration_path %>
+    </li>
+    <li>
+    <%= link_to "List Your Band", new_performer_path %>
     </li>
     <% if current_user.has_role? :admin %>
       <li>
