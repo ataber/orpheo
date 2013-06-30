@@ -7,6 +7,7 @@ Orpheo::Application.routes.draw do
     root :to => 'performers#index'
   end
   root :to => "performers#index"
+  match "/pages/plans" => "pages#plans"
   devise_for :users, :controllers => { :registrations => 'registrations' }
   devise_scope :user do
     put 'update_plan', :to => 'registrations#update_plan'

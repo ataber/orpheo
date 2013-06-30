@@ -1,0 +1,8 @@
+<h2>Edit Listing</h2>
+<h4><%= @performer.name %></h4>
+<%= form_for :performer do |f| %>
+  <%= f.label :name, "Name" %>
+  <%= f.text_field :name %>
+  <%= f.label :description, "Description" %>
+  <%= f.text_field :description %>
+<% end %>
