@@ -17,9 +17,7 @@ gem 'simple_form'
 gem 'stripe'
 gem 'stripe_event'
 gem 'thin'
-group :production do
-  gem 'pg'
-end
+gem 'pg'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :rbx]
